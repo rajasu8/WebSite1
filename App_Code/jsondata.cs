@@ -2,136 +2,376 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Runtime.Serialization;
+using System.Net;
+using System.Web.Script.Serialization;
 
-/// <summary>
-/// Summary description for jsondata
-/// </summary>
-
-
-public class BillingJSON
+   public class BillingJSON1
     {
-        public string Name { get; set; }
-        public string PrimaryPhone { get; set; }
-        public string Address { get; set; }
-        public string AccountNumber { get; set; }
-        public string BillDate { get; set; }
-        public AccountSummary AccountSummary { get; set; }
-        public string TotalDuebyDate { get; set; }
-        public DetailsOfCurrentCharges DetailsofCurrentCharges { get; set; }
-        public string TotalDue { get; set; }
+        public Name Name { get; set; }
+        public PrimaryPhone PrimaryPhone { get; set; }
+        public Address Address { get; set; }
+        public Accountnumber AccountNumber { get; set; }
+        public Billdate BillDate { get; set; }
+        public Account_Summary Account_Summary { get; set; }
+        public Total_Due_By_Date Total_Due_by_Date { get; set; }
+        public Details_Of_Current_Charges Details_of_Current_Charges { get; set; }
+        public Total_Due Total_Due { get; set; }
+
+    public static BillingJSON1 Deserialize(string json, out BillingJSON1 details)
+        {
+                   // string JsonData = "http://192.168.1.35:4782/BillingSystem/rest/selfservice";
+
+            //  var webClient = new WebClient();
+            //    string data = webClient.DownloadString(JsonData);
+            //Console.WriteLine(data);
+
+            //try
+            //{
+            JavaScriptSerializer ser = new JavaScriptSerializer();
+
+            details = ser.Deserialize<BillingJSON1>(json);
+            return details;
+
+            //    }
+            //    catch (WebException ex)
+            //    {
+            //        if (ex.Status == WebExceptionStatus.ProtocolError)
+            //        {
+            //            var response = ex.Response as HttpWebResponse;
+            //            if (response != null)
+            //            {
+            //                Console.WriteLine("HTTP Status Code: " + (int)response.StatusCode);
+            //            }
+            //        }
+
+
+            //}
+            //    return name;
+
+        }
     }
 
-    public class AccountSummary
+    public class Name
     {
-        public PreviousPeriod PreviousPeriod { get; set; }
-        public CurrentCharges CurrentCharges { get; set; }
+        public string value { get; set; }
     }
 
-    public class PreviousPeriod
+    public class PrimaryPhone
     {
-        public string PreviousBalance { get; set; }
-        public string PaymentReceived { get; set; }
-        public string BalanceForward { get; set; }
-        public string PaymentDate { get; set; }
+        public string value { get; set; }
     }
 
-    public class CurrentCharges
+    public class Address
     {
-        public FIOSTVInternetAndPhoneBundle FIOSTVInternetandPhoneBundle { get; set; }
-        public string AdditionalServicesandEquipment { get; set; }
-        public string FeesandOtherCharges { get; set; }
+        public string value { get; set; }
     }
 
-    public class FIOSTVInternetAndPhoneBundle
+    public class Accountnumber
     {
-        public string Price { get; set; }
-        public string Servicefrom { get; set; }
-        public string Serviceto { get; set; }
+        public string value { get; set; }
     }
 
-    public class DetailsOfCurrentCharges
+    public class Billdate
     {
-        public FiosTVInternetAndPhoneBundle1 FiosTVInternetandPhoneBundle { get; set; }
-        public AdditionalServicesAndEquipment AdditionalServicesandEquipment { get; set; }
-        public FeesAndOtherCharges Feesandothercharges { get; set; }
+        public string value { get; set; }
     }
 
-    public class FiosTVInternetAndPhoneBundle1
+    public class Account_Summary
     {
-        public BundlePrice BundlePrice { get; set; }
+        public Previous_Period Previous_Period { get; set; }
+        public Current_Charges Current_Charges { get; set; }
     }
 
-    public class BundlePrice
+    public class Previous_Period
     {
-        public string Price { get; set; }
-        public string Servicefrom { get; set; }
-        public string Serviceto { get; set; }
+        public Previousbalance PreviousBalance { get; set; }
+        public Paymentreceived PaymentReceived { get; set; }
+        public Balanceforward BalanceForward { get; set; }
+        public Paymentdate PaymentDate { get; set; }
     }
 
-    public class AdditionalServicesAndEquipment
+    public class Previousbalance
+    {
+        public string value { get; set; }
+    }
+
+    public class Paymentreceived
+    {
+        public string value { get; set; }
+    }
+
+    public class Balanceforward
+    {
+        public string value { get; set; }
+    }
+
+    public class Paymentdate
+    {
+        public string value { get; set; }
+    }
+
+    public class Current_Charges
+    {
+        public FIOSTV_Internet_And_Phone_Bundle FIOSTV_Internet_and_Phone_Bundle { get; set; }
+        public Additional_Services_And_Equipment Additional_Services_and_Equipment { get; set; }
+        public Fees_And_Other_Charges Fees_and_Other_Charges { get; set; }
+    }
+
+    public class FIOSTV_Internet_And_Phone_Bundle
+    {
+        public Price Price { get; set; }
+        public Servicefrom Servicefrom { get; set; }
+        public Serviceto Serviceto { get; set; }
+    }
+
+    public class Price
+    {
+        public string value { get; set; }
+    }
+
+    public class Servicefrom
+    {
+        public string value { get; set; }
+    }
+
+    public class Serviceto
+    {
+        public string value { get; set; }
+    }
+
+    public class Additional_Services_And_Equipment
+    {
+        public string value { get; set; }
+    }
+
+    public class Fees_And_Other_Charges
+    {
+        public string value { get; set; }
+    }
+
+    public class Total_Due_By_Date
+    {
+        public string value { get; set; }
+    }
+
+    public class Details_Of_Current_Charges
+    {
+        public Fios_TV_Internet_And_Phone_Bundle Fios_TV_Internet_and_Phone_Bundle { get; set; }
+        public Additional_Services_And_Equipment1 Additional_Services_and_Equipment { get; set; }
+        public Fees_And_Other_Charges1 Fees_and_other_charges { get; set; }
+    }
+
+    public class Fios_TV_Internet_And_Phone_Bundle
+    {
+        public Bundle_Price Bundle_Price { get; set; }
+    }
+
+    public class Bundle_Price
+    {
+        public Price1 Price { get; set; }
+        public Service_From Service_from { get; set; }
+        public Service_To Service_to { get; set; }
+    }
+
+    public class Price1
+    {
+        public string value { get; set; }
+    }
+
+    public class Service_From
+    {
+        public string value { get; set; }
+    }
+
+    public class Service_To
+    {
+        public string value { get; set; }
+    }
+
+    public class Additional_Services_And_Equipment1
     {
         public Services Services { get; set; }
         public Equipment Equipment { get; set; }
-        public string Subtotal { get; set; }
+        public Subtotal Subtotal { get; set; }
     }
 
     public class Services
     {
-        public OnlineBackupAndSharing OnlineBackupandSharing { get; set; }
+        public Online_Backup_And_Sharing Online_Backup_and_Sharing { get; set; }
     }
 
-    public class OnlineBackupAndSharing
+    public class Online_Backup_And_Sharing
     {
-        public string Price { get; set; }
-        public string Servicefrom { get; set; }
-        public string Serviceto { get; set; }
+        public Price2 Price { get; set; }
+        public Service_From1 Service_from { get; set; }
+        public Service_To1 Service_to { get; set; }
+    }
+
+    public class Price2
+    {
+        public string value { get; set; }
+    }
+
+    public class Service_From1
+    {
+        public string value { get; set; }
+    }
+
+    public class Service_To1
+    {
+        public string value { get; set; }
     }
 
     public class Equipment
     {
-        public SetTopBox SetTopBox { get; set; }
-        public HDMultiRoomDVR HDMultiRoomDVR { get; set; }
+        public Set_Top_Box Set_Top_Box { get; set; }
+        public HD_Multiroom_DVR HD_MultiRoom_DVR { get; set; }
     }
 
-    public class SetTopBox
+    public class Set_Top_Box
     {
-        public string Price { get; set; }
-        public string Servicefrom { get; set; }
-        public string Serviceto { get; set; }
+        public Price3 Price { get; set; }
+        public Service_From2 Service_from { get; set; }
+        public Service_To2 Service_to { get; set; }
     }
 
-    public class HDMultiRoomDVR
+    public class Price3
     {
-        public string Price { get; set; }
-        public string Servicefrom { get; set; }
-        public string Serviceto { get; set; }
+        public string value { get; set; }
     }
 
-    public class FeesAndOtherCharges
+    public class Service_From2
     {
-        public TaxesAndGovernmentalFeesAndSurcharges TaxesandGovernmentalfeesandSurcharges { get; set; }
-        public VerizonSurchargesAndFees Verizonsurchargesandfees { get; set; }
-        public string Subtotal { get; set; }
+        public string value { get; set; }
     }
 
-    public class TaxesAndGovernmentalFeesAndSurcharges
+    public class Service_To2
     {
-        public string FederalexciseTax { get; set; }
-        public string Statesalestax { get; set; }
-        public string _911systememergrespfee { get; set; }
+        public string value { get; set; }
     }
 
-    public class VerizonSurchargesAndFees
+    public class HD_Multiroom_DVR
     {
-        public string FederalUniversalService { get; set; }
-        public string Regularityrecoveryfee { get; set; }
-        public string VLDCCRC { get; set; }
-        public string FederalSubscriberlineandaccess { get; set; }
-        public string VideoFranchisefee { get; set; }
-        public string VLDlongdistanceAdministrativecharge { get; set; }
-        public string CATVUniversalaccessfund { get; set; }
-        public string RegionalSportsNetworkfee { get; set; }
-        public string FIOSTVBroadcastfee { get; set; }
+        public Price4 Price { get; set; }
+        public Service_From3 Service_from { get; set; }
+        public Service_To3 Service_to { get; set; }
     }
 
+    public class Price4
+    {
+        public string value { get; set; }
+    }
+
+    public class Service_From3
+    {
+        public string value { get; set; }
+    }
+
+    public class Service_To3
+    {
+        public string value { get; set; }
+    }
+
+    public class Subtotal
+    {
+        public string value { get; set; }
+    }
+
+    public class Fees_And_Other_Charges1
+    {
+        public Taxes_And_Governmental_Fees_And_Surcharges Taxes_and_Governmental_fees_and_Surcharges { get; set; }
+        public Verizon_Surcharges_And_Fees Verizon_surcharges_and_fees { get; set; }
+        public Subtotal1 Subtotal { get; set; }
+    }
+
+    public class Taxes_And_Governmental_Fees_And_Surcharges
+    {
+        public Federal_ExciseTax Federal_exciseTax { get; set; }
+        public State_Sales_Tax State_sales_tax { get; set; }
+        public _911_System_Emerg_Resp_Fee _911_system_emerg_resp_fee { get; set; }
+    }
+
+    public class Federal_ExciseTax
+    {
+        public string value { get; set; }
+    }
+
+    public class State_Sales_Tax
+    {
+        public string value { get; set; }
+    }
+
+    public class _911_System_Emerg_Resp_Fee
+    {
+        public string value { get; set; }
+    }
+
+    public class Verizon_Surcharges_And_Fees
+    {
+        public Federal_Universal_Service Federal_Universal_Service { get; set; }
+        public Regularity_Recovery_Fee Regularity_recovery_fee { get; set; }
+        public VLD_CCRC VLD_CCRC { get; set; }
+        public Federal_Subscriber_Line_And_Access Federal_Subscriber_line_and_access { get; set; }
+        public Video_Franchise_Fee Video_Franchise_fee { get; set; }
+        public VLD_Long_Distance_Administrative_Charge VLD_long_distance_Administrative_charge { get; set; }
+        public CATV_Universal_Access_Fund CATV_Universal_access_fund { get; set; }
+        public Regional_Sports_Network_Fee Regional_Sports_Network_fee { get; set; }
+        public FIOS_TV_Broadcast_Fee FIOS_TV_Broadcast_fee { get; set; }
+    }
+
+    public class Federal_Universal_Service
+    {
+        public string value { get; set; }
+    }
+
+    public class Regularity_Recovery_Fee
+    {
+        public string value { get; set; }
+    }
+
+    public class VLD_CCRC
+    {
+        public string value { get; set; }
+    }
+
+    public class Federal_Subscriber_Line_And_Access
+    {
+        public string value { get; set; }
+    }
+
+    public class Video_Franchise_Fee
+    {
+        public string value { get; set; }
+    }
+
+    public class VLD_Long_Distance_Administrative_Charge
+    {
+        public string value { get; set; }
+    }
+
+    public class CATV_Universal_Access_Fund
+    {
+        public string value { get; set; }
+    }
+
+    public class Regional_Sports_Network_Fee
+    {
+        public string value { get; set; }
+    }
+
+    public class FIOS_TV_Broadcast_Fee
+    {
+        public string value { get; set; }
+    }
+
+    public class Subtotal1
+    {
+        public string value { get; set; }
+    }
+
+    public class Total_Due
+    {
+        public string value { get; set; }
+    }
 

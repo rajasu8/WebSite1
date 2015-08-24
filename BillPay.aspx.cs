@@ -9,24 +9,43 @@ public partial class _Default : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        string json = System.IO.File.ReadAllText(@"D:\bill.json");
+        BillingJSON1 details;
+        BillingJSON1.Deserialize(json, out details);
 
 
+        lblPhone.Text = details.PrimaryPhone.value.ToString();
+        lblAccount.Text = details.AccountNumber.value.ToString();
+        lblDate.Text = details.BillDate.value.ToString();
 
-       lblDueDate2.Text =  "August 30,2015";
-        lblCCFIOSDate.Text = "7/28/2015-8/20/2015";
-        lblFIOS.Text = "116.98";
-        lblAddService.Text = "30.97";
-        lblFees.Text = "27.69";
-        lblTotalDue1.Text = "$175.64";
-        // lblTotalDue2.Text = "$175.64";
-        lblPhone.Text = "201-444-6736";
-        lblAccount.Text = "201-444-6736";
 
-        lblDate.Text = "August 20,2015";
-        lblPreviousBalance.Text = "175";
-        lblPaymentReceived.Text = "-175";
-        lblPaymentDate.Text = "7/28/2015";
-        lblBalanceForward.Text = "$.00";
-        lblDueDate1.Text = "August 30,2015";
+        lblPreviousBalance.Text = details.Account_Summary.Previous_Period.PreviousBalance.value.ToString();
+        lblPaymentReceived.Text = details.Account_Summary.Previous_Period.PaymentReceived.value.ToString();
+        lblPaymentDate.Text = details.Account_Summary.Previous_Period.PaymentDate.value.ToString();
+        lblBalanceForward.Text = details.Account_Summary.Previous_Period.BalanceForward.value.ToString();
+
+        lblFIOS.Text = details.Account_Summary.Current_Charges.FIOSTV_Internet_and_Phone_Bundle.Price.value.ToString();
+        string servicefrom = details.Account_Summary.Current_Charges.FIOSTV_Internet_and_Phone_Bundle.Servicefrom.value.ToString();
+        string serviceto = details.Account_Summary.Current_Charges.FIOSTV_Internet_and_Phone_Bundle.Serviceto.value.ToString();
+        lblCCFIOSDate.Text = servicefrom + "-" + serviceto;
+
+        
+        lblAddService.Text = details.Account_Summary.Current_Charges.Additional_Services_and_Equipment.value.ToString();
+        lblFees.Text = details.Account_Summary.Current_Charges.Fees_and_Other_Charges.value.ToString();
+
+        lblDueDate1.Text = details.Total_Due_by_Date.value.ToString();
+        lblDueDate2.Text= details.Total_Due_by_Date.value.ToString();
+
+        lblTotalDue1.Text = details.Total_Due.value.ToString();
+
+    }
+
+    protected void Pay_Click(object sender, EventArgs e)
+    {
+        Pay.Visible = false;
+        LabelPay.Visible = true;
+        LabelPay.Text = "Thank you for online payment";
+       
+
     }
 }
