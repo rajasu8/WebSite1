@@ -3,8 +3,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <div style="float:left; width:68%">
     <form id="form1" runat="server" style="color: #000000">
-    <table class="style1" style="width: 734px" left="300px" top="760px" height="468px" align="center">
+    <table class="style1" style="width: 600px; font-family: 'Times New Roman';"  align="left">
     <tr>
         <td colspan="3" align="center" bgcolor="White" style="height: 20px">
             Masked Customer Name</td>
@@ -42,8 +43,8 @@
             Account Summary</td>
     </tr>
     <tr>
-        <td class="style7" colspan="3" bgcolor="White" style="color: #FFFFFF">
-            &nbsp;</td>
+        <td class="style7" colspan="3" bgcolor="White" style="color: #FFFFFF; height: 20px;">
+            </td>
     </tr>
     <tr>
         <td class="style7" colspan="3" bgcolor="Red" style="color: #FFFFFF; font-size: x-large;">
@@ -150,17 +151,22 @@
          <tr>
         <td bgcolor="White" align="center" colspan="3" style="height: 30px">
             <asp:Button ID="Pay" runat="server" Text="PAY" BackColor="Red" BorderStyle="Outset" Height="50px" Width="150px" ForeColor="White" OnClick="Pay_Click" />
-            <asp:Label runat="server" ID="LabelPay" BackColor="Red" BorderColor="White" BorderStyle="Outset" Enabled="False" ForeColor="White" Height="40px" Visible="False" Width="250px"></asp:Label>
+             </td>
+    </tr>
+         <tr>
+        <td class="modal-sm" bgcolor="White" style="height: 20px;" align="center" colspan="3">
+            <asp:Button runat="server" ID="LabelPay" BackColor="Red" BorderColor="White" BorderStyle="Outset" ForeColor="White" Height="50px" Visible="False" Width="225px" OnClick="LabelPay_Click" />
              </td>
     </tr>
          <tr>
         <td class="modal-sm" bgcolor="White" style="width: 244px">
             &nbsp;</td>
         <td bgcolor="White" style="width: 245px" align="center">
-            &nbsp;</td>
+            <br />
+             </td>
         <td class="style10" style="width: 245px" bgcolor="White">
             &nbsp;</td>
-    </tr>
+        </tr>
          <tr>
         <td class="modal-sm" bgcolor="White" style="width: 244px">
             &nbsp;</td>
@@ -174,6 +180,95 @@
 </table>
 
     </form>
+        </div>
+    <div style="float:right; width:32%" align="right">
+        <table style="color:#000000; background-color: #FFFFFF;" bgcolor="White" width="325px">
+            <tr>
+                <td style="border-color: #C0C0C0; background-color: #CCCCCC" >
+                    <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Italic="True" Font-Size="Large" ForeColor="Black" BackColor="#CCCCCC">GET ANSWERS FAST</asp:Label> <br />
+                    <ul>
+                        <li>
+                            <asp:Label ID="Label2" runat="server" BackColor="#CCCCCC" ForeColor="Black"> Click to chat at</asp:Label>
+                            <a href="http://www.verizonwireless.com/b2c/myverizonlp/" style="color:  black"> TwentyFifteen.com/liveagent</a>
+                        </li>
+                        <li>
+                            <asp:Label ID="Label4" runat="server" BackColor="#CCCCCC" ForeColor="Black"> Call</asp:Label><asp:Label ID="Label5" Font-Bold="True" Font-Italic="True" runat="server" BackColor=" #CCCCCC" ForeColor="Black"> 1.700.TwentyFifteen(1.700.247.4427)</asp:Label>
+                        </li>
+                         <li>
+                            <asp:Label ID="Label6" runat="server" BackColor="#CCCCCC" ForeColor="Black"> Customers with disabilities call</asp:Label><asp:Label ID="Label7" Font-Bold="True" Font-Italic="True" runat="server" BackColor=" #CCCCCC" ForeColor="Black"> 1.700.427.4747</asp:Label>
+                              <asp:Label ID="Label8" runat="server" BackColor="#CCCCCC" ForeColor="Black"> (Voice or TTY)</asp:Label>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                     &nbsp;
+                </td>
+            </tr>
+          
+              <tr>
+                <td>
+                    <img src="images/t15.jpg"  alt="Desert" width="10%" align="left" style="height:50px">
+                     <asp:Label ID="Label3" runat="server" Font-Bold="True" Font-Italic="True" Font-Size="X-Large" ForeColor="Black" BackColor="White">OFFERS & BENEFITS</asp:Label> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                     &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                       <asp:Label ID="Label9" runat="server" Font-Bold="True"  Font-Size="Large" ForeColor="Black" BackColor="White">WIRELESS DISCOUNTS</asp:Label>
+
+                </td>
+            </tr>
+             <tr>
+                <td>
+                     &nbsp;
+                </td>
+            </tr>
+             <tr>
+                <td>
+                <asp:Label ID="Label10" runat="server" BackColor="White" ForeColor="Black"> As a valued active service member or veteran, we offer to you a 15% discount off your monthly TwentyFifteen Wireless service and 25% discount off select accessories. Registering for the discount is easy, click</asp:Label>
+                 <a href="http://www.verizonwireless.com/b2c/myverizonlp/" style="color:  black; font-size: medium; font-style: italic;"> TwentyFifteen.com/liveagent</a>
+                  <asp:Label ID="Label11" runat="server" BackColor="White" ForeColor="Black">. To verify your service, you can use your</asp:Label>
+                    <asp:Label ID="Label12" runat="server" Font-Bold="True" >DD Form 214, Veteran's ID Card, Military Retiree Account Statement or VetRewards Card from Veterans Advantage</asp:Label> 
+                     </td>
+            </tr>
+             <tr>
+                <td>
+                     &nbsp;
+                </td>
+            </tr>
+             <tr>
+                <td>
+                       <asp:Label ID="Label13" runat="server" Font-Bold="True"  Font-Size="Large" ForeColor="Black" BackColor="White">TwentyFifteen FiOS OFFERS</asp:Label>
+
+                </td>
+            </tr>
+             <tr>
+                <td>
+                     &nbsp;
+                </td>
+            </tr>
+             <tr>
+                <td>
+                      <asp:Label ID="Label14" runat="server" BackColor="White" ForeColor="Black">You may be eligible to save up to $120 per year on qualifying FiOS or HSI Triple 
+Play packages.</asp:Label>
+                    <asp:Label ID="Label17" runat="server" Font-Bold="True"  >FiOS Triple Play</asp:Label><asp:Label ID="Label19" runat="server"> — Home Phone, Internet and FiOS TV (available in select service areas).</asp:Label>
+                    <asp:Label ID="Label18" runat="server" Font-Bold="True"  >High Speed Internet (HSI) Triple Play</asp:Label>
+                     <asp:Label ID="Label20" runat="server"> — Home Phone, Internet and DIRECTV.Taking advantage of these packages is easy. If you're an active service member, select  </asp:Label>
+                 <a href="http://www.verizonwireless.com/b2c/myverizonlp/" style="color:  black; font-size: medium; font-style: italic;">  Active Service Member</a>
+                 <%-- <asp:Label ID="Label15" runat="server" BackColor="White" ForeColor="Black">. To verify your service, you can use your</asp:Label>
+                    <asp:Label ID="Label16" runat="server" Font-Bold="True" >DD Form 214, Veteran's ID Card, Military Retiree Account Statement or VetRewards Card from Veterans Advantage</asp:Label> 
+                     --%>
+                </td>
+            </tr>
+
+        </table>
+    </div>
 
 </asp:Content>
 

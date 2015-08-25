@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <form id="form1" runat="server">
-    <table class="style1" style="width: 734px" left="300px" top="760px" height="468px" align="center">
+    <table class="style1" style="width: 734px; font-family: 'Times New Roman';" left="300px" top="760px" height="468px" align="center">
     <tr>
         <td colspan="3" align="center" bgcolor="White" style="height: 20px">
             Masked Customer Name</td>
