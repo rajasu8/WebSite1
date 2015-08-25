@@ -56,7 +56,7 @@ public partial class _Default : System.Web.UI.Page
         
 
         //DateTime thisDay = DateTime.Now;
-        Response.Write(details.Total_Due.value.ToString());
+      //  Response.Write(details.Total_Due.value.ToString());
         //Response.Write(thisDay.ToString("d")); (On button click send custID,date,amount due)
 
 

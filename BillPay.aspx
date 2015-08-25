@@ -155,7 +155,8 @@
     </tr>
          <tr>
         <td class="modal-sm" bgcolor="White" style="height: 20px;" align="center" colspan="3">
-            <asp:Button runat="server" ID="LabelPay" BackColor="Red" BorderColor="White" BorderStyle="Outset" ForeColor="White" Height="50px" Visible="False" Width="225px" OnClick="LabelPay_Click" />
+            <asp:Button runat="server" ID="LabelPay" BackColor="Red" BorderColor="White" BorderStyle="Outset"
+                 ForeColor="White" Height="50px" Visible="False" Width="225px" OnClick="LabelPay_Click" />
              </td>
     </tr>
          <tr>
@@ -182,7 +183,9 @@
     </form>
         </div>
     <div style="float:right; width:32%" align="right">
-        <table style="color:#000000; background-color: #FFFFFF;" bgcolor="White" width="325px">
+      
+
+                <table style="color:#000000; background-color: #FFFFFF;" bgcolor="White" width="325px">
             <tr>
                 <td style="border-color: #C0C0C0; background-color: #CCCCCC" >
                     <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Italic="True" Font-Size="Large" ForeColor="Black" BackColor="#CCCCCC">GET ANSWERS FAST</asp:Label> <br />
@@ -268,6 +271,7 @@ Play packages.</asp:Label>
             </tr>
 
         </table>
+            </form>
     </div>
 
 </asp:Content>
