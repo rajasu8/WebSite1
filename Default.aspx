@@ -58,11 +58,11 @@
             &nbsp;</td>
     </tr>
     <tr>
-        <td class="modal-sm" bgcolor="White" style="width: 243px">
+        <td class="modal-sm" bgcolor="White" style="border-color: #FFFFFF; border-bottom-style: outset;">
             Bundle Price</td>
-        <td align="right" bgcolor="White" style="width: 245px">
+        <td align="right" bgcolor="White" style="border-color: #FFFFFF; border-bottom-style: outset;">
           <asp:Label ID="lblBundlePrice" runat="server"></asp:Label></td>
-        <td class="style10" style="width: 245px" bgcolor="White" align="center">
+        <td class="style10" style="border-color: #FFFFFF; border-bottom-style: outset;" bgcolor="White" align="center">
             <asp:Label ID="lblBundleDate" runat="server"></asp:Label></td>
     </tr>
     <tr>
@@ -99,11 +99,11 @@
             &nbsp;</td>
         </tr>
     <tr>
-        <td class="modal-sm" bgcolor="White" style="width: 243px; height: 23px;">
+        <td class="modal-sm" bgcolor="White" style="border-bottom-style: outset; border-top-color: #FFFFFF;">
             Online Equipment and Sharing/10 GB</td>
-        <td align="right" bgcolor="White" style="width: 245px; height: 23px;">
+        <td align="right" bgcolor="White" style="border-bottom-style: outset; border-top-color: #FFFFFF;">
            <asp:Label ID="lblOnlineBackup" runat="server"></asp:Label></td>
-        <td class="style10" align="center" style="width: 245px; height: 23px;" bgcolor="White">
+        <td class="style10" align="center" style="border-bottom-style: outset; border-top-color: #FFFFFF;" bgcolor="White">
             <asp:Label ID="lblOnlineBackupDate" runat="server"></asp:Label></td>
     </tr>
         <tr>
@@ -127,11 +127,11 @@
             &nbsp;</td>
         </tr>
     <tr>
-        <td class="modal-sm" bgcolor="White" style="width: 243px; height: 23px;">
+        <td class="modal-sm" bgcolor="White" style="border-bottom-style: outset; border-top-color: #FFFFFF;">
             (Rent):Set Top Box</td>
-        <td align="right" bgcolor="White" style="width: 245px; height: 23px;">
+        <td align="right" bgcolor="White" style="border-bottom-style: outset; border-top-color: #FFFFFF;">
            <asp:Label ID="lblSetTop" runat="server"></asp:Label></td>
-        <td class="style10" style="width: 245px; height: 23px;" bgcolor="White" align="center">
+        <td class="style10" style="border-bottom-style: outset; border-top-color: #FFFFFF;" bgcolor="White" align="center">
             <asp:Label ID="lblSetTopDate" runat="server"></asp:Label></td>
     </tr>
     <tr>
@@ -188,19 +188,19 @@
             &nbsp;</td>
         </tr>
         <tr>
-        <td class="modal-sm" bgcolor="White" style="width: 243px; height: 23px;">
+        <td class="modal-sm" bgcolor="White" style="border-bottom-style: outset; border-top-color: #FFFFFF;">
             Federal Excise Tax</td>
-        <td align="right" bgcolor="White" style="width: 245px; height: 23px;">
+        <td align="right" bgcolor="White" style="border-bottom-style: outset; border-top-color: #FFFFFF;">
            <asp:Label ID="lblFederalTax" runat="server"></asp:Label></td>
-        <td class="style10" align="center" style="width: 245px; height: 23px;" bgcolor="White">
+        <td class="style10" align="center" style="border-bottom-style: outset; border-top-color: #FFFFFF;" bgcolor="White">
             &nbsp;</td>
         </tr>
         <tr>
-        <td class="modal-sm" bgcolor="White" style="width: 243px; height: 23px;">
+        <td class="modal-sm" bgcolor="White" style="border-bottom-style: outset; border-top-color: #FFFFFF;">
             NJ State Sales Tax</td>
-        <td align="right" bgcolor="White" style="width: 245px; height: 23px;">
+        <td align="right" bgcolor="White" style="border-bottom-style: outset; border-top-color: #FFFFFF;">
            <asp:Label ID="lblStateSales" runat="server"></asp:Label></td>
-        <td class="style10" align="center" style="width: 245px; height: 23px;" bgcolor="White">
+        <td class="style10" align="center" style="border-bottom-style: outset; border-top-color: #FFFFFF;" bgcolor="White">
             &nbsp;</td>
         </tr>
         <tr>
@@ -228,71 +228,71 @@
             &nbsp;</td>
         <td bgcolor="White" style="width: 245px">
             &nbsp;</td>
-        <td class="style10" style="width: 245px" bgcolor="White">
+        <td class="style10" style="width: 245px" bgcolor="White" spellcheck="false">
             &nbsp;</td>
         </tr>
         <tr>
-        <td class="modal-sm" bgcolor="White" style="width: 243px; height: 23px;">
+        <td class="modal-sm" bgcolor="White" style="border-bottom-style: outset; border-top-color: #FFFFFF;">
             Federal Universal Service Fee</td>
-        <td align="right" bgcolor="White" style="width: 245px; height: 23px;">
+        <td align="right" bgcolor="White" style="border-bottom-style: outset; border-top-color: #FFFFFF;">
            <asp:Label ID="lblUniversalFee" runat="server"></asp:Label></td>
-        <td class="style10" align="center" style="width: 245px; height: 23px;" bgcolor="White">
+        <td class="style10" align="center" style="border-bottom-style: outset; border-top-color: #FFFFFF;" bgcolor="White">
             &nbsp;</td>
         </tr>
         <tr>
-        <td class="modal-sm" bgcolor="White" style="width: 243px; height: 23px;">
+        <td class="modal-sm" bgcolor="White" style="border-bottom-style: outset; border-top-color: #FFFFFF;">
             Regulatory Recover Fee-Federal</td>
-        <td align="right" bgcolor="White" style="width: 245px; height: 23px;">
+        <td align="right" bgcolor="White" style="border-bottom-style: outset; border-top-color: #FFFFFF;">
            <asp:Label ID="lblRegulatory" runat="server"></asp:Label></td>
-        <td class="style10" align="center" style="width: 245px; height: 23px;" bgcolor="White">
+        <td class="style10" align="center" style="border-bottom-style: outset; border-top-color: #FFFFFF;" bgcolor="White">
             &nbsp;</td>
         </tr>
         <tr>
-        <td class="modal-sm" bgcolor="White" style="width: 243px; height: 23px;">
+        <td class="modal-sm" bgcolor="White" style="border-bottom-style: outset; border-top-color: #FFFFFF;">
             VLD Carrier Cost Recovery Charge</td>
-        <td align="right" bgcolor="White" style="width: 245px; height: 23px;">
+        <td align="right" bgcolor="White" style="border-bottom-style: outset; border-top-color: #FFFFFF;">
            <asp:Label ID="lblVLDCarrier" runat="server"></asp:Label></td>
-        <td class="style10" align="center" style="width: 245px; height: 23px;" bgcolor="White">
+        <td class="style10" align="center" style="border-bottom-style: outset; border-top-color: #FFFFFF;" bgcolor="White">
             &nbsp;</td>
         </tr>
         <tr>
-        <td class="modal-sm" bgcolor="White" style="width: 243px; height: 23px;">
+        <td class="modal-sm" bgcolor="White" style="border-bottom-style: outset; border-top-color: #FFFFFF;">
             Federal Subscriber Line and Access Recovery Charge</td>
-        <td align="right" bgcolor="White" style="width: 245px; height: 23px;">
+        <td align="right" bgcolor="White" style="border-bottom-style: outset; border-top-color: #FFFFFF;">
            <asp:Label ID="lblFederalSubscriber" runat="server"></asp:Label></td>
-        <td class="style10" align="center" style="width: 245px; height: 23px;" bgcolor="White">
+        <td class="style10" align="center" style="border-bottom-style: outset; border-top-color: #FFFFFF;" bgcolor="White">
             &nbsp;</td>
         </tr>
         <tr>
-        <td class="modal-sm" bgcolor="White" style="width: 243px; height: 23px;">
+        <td class="modal-sm" bgcolor="White" style="border-bottom-style: outset; border-top-color: #FFFFFF;">
             Video Franchise Fee</td>
-        <td align="right" bgcolor="White" style="width: 245px; height: 23px;">
+        <td align="right" bgcolor="White" style="border-bottom-style: outset; border-top-color: #FFFFFF;">
            <asp:Label ID="lblVideo" runat="server"></asp:Label></td>
-        <td class="style10" align="center" style="width: 245px; height: 23px;" bgcolor="White">
+        <td class="style10" align="center" style="border-bottom-style: outset; border-top-color: #FFFFFF;" bgcolor="White">
             &nbsp;</td>
         </tr>
         <tr>
-        <td class="modal-sm" bgcolor="White" style="width: 243px; height: 23px;">
+        <td class="modal-sm" bgcolor="White" style="border-bottom-style: outset; border-top-color: #FFFFFF;">
             VLD Long Distance Administrative Charge</td>
-        <td align="right" bgcolor="White" style="width: 245px; height: 23px;">
+        <td align="right" bgcolor="White" style="border-bottom-style: outset; border-top-color: #FFFFFF;">
            <asp:Label ID="lblVLDLong" runat="server"></asp:Label></td>
-        <td class="style10" align="center" style="width: 245px; height: 23px;" bgcolor="White">
+        <td class="style10" align="center" style="border-bottom-style: outset; border-top-color: #FFFFFF;" bgcolor="White">
             &nbsp;</td>
         </tr>
         <tr>
-        <td class="modal-sm" bgcolor="White" style="width: 243px; height: 23px;">
+        <td class="modal-sm" bgcolor="White" style="border-bottom-style: outset; border-top-color: #FFFFFF;">
             CATV Universal Access Fund</td>
-        <td align="right" bgcolor="White" style="width: 245px; height: 23px;">
+        <td align="right" bgcolor="White" style="border-bottom-style: outset; border-top-color: #FFFFFF;">
            <asp:Label ID="lblCATVAccess" runat="server"></asp:Label></td>
-        <td class="style10" align="center" style="width: 245px; height: 23px;" bgcolor="White">
+        <td class="style10" align="center" style="border-bottom-style: outset; border-top-color: #FFFFFF;" bgcolor="White">
             &nbsp;</td>
         </tr>
         <tr>
-        <td class="modal-sm" bgcolor="White" style="width: 243px; height: 23px;">
+        <td class="modal-sm" bgcolor="White" style="border-bottom-style: outset; border-top-color: #FFFFFF;">
             Regional Sports Network Fee</td>
-        <td align="right" bgcolor="White" style="width: 245px; height: 23px;">
+        <td align="right" bgcolor="White" style="border-bottom-style: outset; border-top-color: #FFFFFF;">
            <asp:Label ID="lblRegionalSports" runat="server"></asp:Label></td>
-        <td class="style10" align="center" style="width: 245px; height: 23px;" bgcolor="White">
+        <td class="style10" align="center" style="border-bottom-style: outset; border-top-color: #FFFFFF;" bgcolor="White">
             &nbsp;</td>
         </tr>
         <tr>

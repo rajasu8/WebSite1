@@ -58,19 +58,19 @@
             &nbsp;</td>
     </tr>
     <tr>
-        <td class="modal-sm" bgcolor="White" style="width: 244px">
+        <td class="modal-sm" bgcolor="White" style="border-bottom-style: outset; border-top-color: #FFFFFF;">
             Previous Balance</td>
-        <td align="right" bgcolor="White" style="width: 245px">
+        <td align="right" bgcolor="White" style="border-bottom-style: outset; border-top-color: #FFFFFF;">
             <asp:Label ID="lblPreviousBalance" runat="server"></asp:Label></td>
-        <td class="style10" align="center" style="width: 245px" bgcolor="White">
+        <td class="style10" align="center" style="border-bottom-style: outset; border-top-color: #FFFFFF;" bgcolor="White">
             &nbsp;</td>
     </tr>
     <tr>
-        <td class="modal-sm" bgcolor="White" style="width: 244px">
+        <td class="modal-sm" bgcolor="White" style="border-color: #FFFFFF;">
             Payment Received-Thank You</td>
-        <td align="right" bgcolor="White" style="width: 245px">
+        <td align="right" bgcolor="White" style="border-color: #FFFFFF;">
           <asp:Label ID="lblPaymentReceived" runat="server"></asp:Label></td>
-        <td class="style10" style="width: 245px" bgcolor="White" align="center">
+        <td class="style10" style="border-color: #FFFFFF;" bgcolor="White" align="center">
             <asp:Label ID="lblPaymentDate" runat="server"></asp:Label></td>
     </tr>
     <tr>
@@ -95,27 +95,27 @@
             &nbsp;</td>
     </tr>
     <tr>
-        <td class="modal-sm" bgcolor="White" style="width: 244px">
+        <td class="modal-sm" bgcolor="White" style="border-top-color: #FFFFFF; border-bottom-style: outset;">
             FIOS,TV,Internet&amp;PhoneBundle</td>
-        <td align="right" bgcolor="White" style="width: 245px">
+        <td align="right" bgcolor="White" style="border-top-color: #FFFFFF; border-bottom-style: outset;">
            <asp:Label ID="lblFIOS" runat="server"></asp:Label></td>
-        <td class="style10" align="center" style="width: 245px" bgcolor="White">
+        <td class="style10" align="center" style="border-top-color: #FFFFFF; border-bottom-style: outset;" bgcolor="White">
             <asp:Label ID="lblCCFIOSDate" runat="server"></asp:Label></td>
     </tr>
     <tr>
-        <td class="modal-sm" bgcolor="White" style="width: 244px">
+        <td class="modal-sm" bgcolor="White" style="border-top-color: #FFFFFF; border-bottom-style: outset;">
             Additional Services&amp;Equipment</td>
-        <td align="right" bgcolor="White" style="width: 245px"><asp:Label ID="lblAddService" runat="server"></asp:Label>
+        <td align="right" bgcolor="White" style="border-top-color: #FFFFFF; border-bottom-style: outset;"><asp:Label ID="lblAddService" runat="server"></asp:Label>
             </td>
-        <td class="style10" style="width: 245px" bgcolor="White">
+        <td class="style10" style="border-top-color: #FFFFFF; border-bottom-style: outset;" bgcolor="White">
             &nbsp;</td>
     </tr>
     <tr>
-        <td class="modal-sm" bgcolor="White" style="width: 244px">
+        <td class="modal-sm" bgcolor="White" style="border-color: #FFFFFF;">
             Fees &amp; Charges</td>
-        <td align="right" bgcolor="White" style="width: 245px">
+        <td align="right" bgcolor="White" style="border-color: #FFFFFF;">
            <asp:Label ID="lblFees" runat="server"></asp:Label></td>
-        <td class="style10" style="width: 245px" bgcolor="White">
+        <td class="style10" style="border-color: #FFFFFF;" bgcolor="White">
             &nbsp;</td>
     </tr>
     <tr>
